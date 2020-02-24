@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact__container {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("img/bg.png");
+    background-size: 100%;
+}
+
+/*__________________TITLE_____________*/
+.form__title {
+    width: 79%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25%;
+    margin-top: 3%;
+}
+
+.title__name {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+.title__content {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*_____________FORM____________*/
+.form__container {
+    width: 40%;
+    height: 58%;
+    padding-right: 3%;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr 12fr;
+    grid-gap: 3.3%;
+    height: 100%;
+}
+.form__field {
+    background-color: rgba(0, 196, 196, .4);
+    padding-left: 3%;
+    border: none;
+    color: white;
+    resize: none;
+}
+.form__field::placeholder {
+    font-family: "Raleway" sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ecf9f9;
+
+}
+.form__field:focus {
+    background-color: rgba(0, 196, 196, 1);
+    border-left: 4px solid #355b82;
+}
+
+/*________________CONTACTS_____________*/
+.form__contacts {
+    width: 40%;
+    height: 58%;
+    padding-left: 5%;
+}
+.contact__type {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact__name {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+/*_____________FOOTER_____________*/
+.footer {
+    height: 12vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__text {
+    color: #7e7e7e;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.footer__text span {
+    color: #ff2b58;
+    font-weight: 700;
+}
